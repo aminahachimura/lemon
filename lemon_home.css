@@ -1,0 +1,238 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	box-sizing: border-box;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+
+
+h1{
+    font-family: "source-han-sans-japanese", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+	color: #B3B3B3;
+}
+h2{
+    font-family: "bitcount-prop-double-line-ci", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 110px;
+	color: #B3B3B3;
+}
+
+h3{
+    font-family: "bitcount-prop-double-plus", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 110px;
+	color: #B3B3B3;
+}
+
+p{
+    font-family: "ff-enzo-web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+	color: #B3B3B3;
+}
+
+h4{
+    font-family: "brevier", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+	color: white;
+}
+
+h5{
+    font-family: "ff-enzo-web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+	color: #B3B3B3;
+}
+
+h6{
+    font-family: "vdl-gigag", sans-serif;
+font-weight: 500;
+font-style: normal;
+    font-size: 18px;
+	color: white;
+}
+
+h7{
+    font-family: "brevier", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+	color: #B3B3B3;
+    line-height: 48px;
+}
+
+h8{
+    font-family: "brevier", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+	color: #B3B3B3;
+    line-height: 34px;
+}
+
+
+
+header {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        /*border: 3px solid #FFDC00;*/   
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../src/lemon_background_1.jpg');
+    background-repeat: no-repeat;
+    overflow: auto;
+    /* transition: background-image 1s ease-in-out; Smooth transition */
+    background-size: cover; /* Ensure background covers the whole screen */
+     background-position: center; /* Center the background image */
+}
+
+
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    bottom: 20px;
+    width: 100px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #B3B3B3;
+}
+nav ul{
+	margin: auto;
+	padding: 0;
+	text-align: center
+}
+nav li{
+	list-style: none;
+    font-family: "brevier", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+	color: #B3B3B3;
+}
+
+.tablink:hover {
+        color: #FFDC00;
+}
+
+
+nav button{
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+	font: inherit;
+	border-radius: 0;
+	appearance: none;
+	color: #B3B3B3;
+	cursor:se-resize;
+}
+
+.tabcontent{
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+li:hover {
+    color: #FFDC00;
+  }
+
+
+.languagebutton{
+    background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+	font: inherit;
+	border-radius: 0;
+	appearance: none;
+	color: #B3B3B3;
+	cursor:se-resize;
+}
+
+#Story{
+    padding-top: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+}
+
+.langchange{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    right: 50px;
+    bottom: 50px;
+    width: 80px;
+    align-items: center;
+}
+
+.languagebutton h4:hover{
+        color: #FFDC00;
+}
+
+
+#About{
+    padding-top: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+    
+}
+
+.yellow{
+    color: #FFDC00;
+}
+
+#Video{
+    padding-top: 180px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.lemonanimation{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+

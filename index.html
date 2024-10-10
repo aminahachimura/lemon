@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon</title>
+    <script src="lemon_home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    
+    <link href="lemon_home.css" rel="stylesheet" type="text/css">
+    
+  
+    <!-- font -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rvf1his',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+       
 
+</head>
+<body onclick="changeBackground()">
+    <header onclick="event.stopPropagation()">
+      <a href="index.html" style="text-decoration: none; color: inherit;">
+          <h3>Lemon</h3>
+    </a>
+    </header>
+    <nav onclick="event.stopPropagation()">
+      <ul>
+        <li><button class="tablink" onclick="openNav('Home')">Home</button></li>
+        <li><button class="tablink" onclick="openNav('About')">About</button></li>
+        <li><button class="tablink" onclick="openNav('Story')">Raed</button></li>
+        <li><button class="tablink" onclick="openNav('Video')">Watch</button></li>
+        <li><button class="tablink" onclick="openNav('Game')">Game</button></li>
+      </ul>
+    </nav>
+
+<div id="content">
+<div id="Home" class="tabcontent">
+  <script>
+    const images = ['../src/lemon_background_1.jpg', '../src/lemon_background_2.jpg', '../src/lemon_background_3.jpg', '../src/lemon_background_4.jpg', '../src/lemon_background_5.jpg', '../src/lemon_background_6.jpg', '../src/lemon_background_7.jpg'];
+    let currentImageIndex = 0;
+  
+    function changeBackground() {
+      // Increment the image index
+      currentImageIndex++;
+
+      // Check if we've reached the last image
+      if (currentImageIndex >= images.length) {
+        // Redirect to another website
+        window.location.href = "https://newart.city/show/lemon"; // Replace with your target URL
+      } else {
+        // Change the background image
+        document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+      }
+    }
+  </script>
+</div>
+
+<div id="About" class="tabcontent">
+  <h7>“It was as though my dark mood was turning into something clear, transparent and light, <br>just like that <span class="yellow">lemon</span>.”</h7><br><br>
+    <h8>Welcome to a space inspired by Lemon by Motojiro Kajii. <br>Just as the weight of a dark mood can be lifted by the brightness of a lemon, <br>design can give way to lightness, transforming the ordinary into <br>something vivid and alive. <br><br>Through playful and lighthearted graphics, I explored a whimsical yet grounded experience that reflects the power of a single moment <br>to ignite joy and delight in everything.<br>
+    Here, lemons aren't just fruit. <br>They're symbols of lightness, playfulness, and the joy <br>found in small, unexpected moments.<br><br></h8>
+
+  <!--<h7>"The weight in my chest seemed to melt away, and my mood grew light and clear. It was just as though that cold and heavy lump had been nothing more than a playful lemon."<br><br>
+    "In that moment, the lemon was more than fruit; it was a burst of light in a gray world, a symbol of escape and renewal."<br><br>
+    "It was absurd, I thought, how a simple lemon could break through the dullness of the day, turning even the heaviest thoughts into something light and fleeting."</h7>-->
+  
+
+
+
+</div>
+
+<div id="Story" class="tabcontent" style="min-height: 9800px";>
+  <!--backgroundgradient-->
+  <script>
+    
+
+     // JavaScript to set gradient dynamically
+     function setGradient() {
+            const gradientBackground = document.getElementById('Story');
+            const height = Math.max(document.body.scrollHeight, 9800); 
+
+            // Smooth gradient transition from yellow to purple over the page height
+            gradientBackground.style.background = `linear-gradient(to bottom, #D2CEEC, #FFDC00)`;
+            gradientBackground.style.height = `${height}px`;
+            gradientBackground.style.backgroundSize = `100% ${height}px`;
+        }
+
+        // Run on page load
+        window.onload = setGradient;
+
+        // Adjust if window is resized
+        window.onresize = setGradient;
+    </script>
+    
+
+<!--language-->
+
+    
+    <h4 id="description-en" class="language">An unknown, ominous lump constantly weighed down my heart. <br><br>I didn’t know whether to call it anxiety or disgust. <br>Just as a hangover follows after drinking, a similar state arrives<br> when one drinks every day. <br><br><br>That time had come for me. <br><br><br>It wasn’t the resulting lung disease or nervous breakdown that was the issue. <br>Nor was it the nagging debt weighing on me like a burning burden on my back. <br>No, it was that ominous lump. <br>Even the beautiful music or poetry that had once delighted me was <br>now unbearable. <br>Whenever I went out to listen to the gramophone, I’d get the urge to leave within just two or three measures. Something inside me made it impossible to stay still, and so, I wandered aimlessly from street to street.<br><br><br>
+
+      During that time, I remember being strongly drawn to <br>shabby yet beautiful things. <br>In terms of scenery, I preferred crumbling streets over clean, neat ones.<br> Instead of the distant, unfriendly main roads, I liked the backstreets where laundry hung to dry, junk lay scattered around, and shabby rooms peeked out. These streets had an atmosphere as if they would eventually crumble into the earth, with walls collapsing, and rows of houses tilting. Only the plants seemed lively, with sunflowers or cannas blooming unexpectedly here and there.
+      
+      Sometimes, while walking along such roads, I’d suddenly try to imagine that I was not in Kyoto, but in a distant city like Sendai or Nagasaki. I desperately wanted to escape from Kyoto and go somewhere far away, to a city where no one knew me. <br><br><br>What I longed for most was peace. <br><br><br>A quiet room in an empty inn. Clean futons. Fresh-smelling mosquito nets and a well-starched yukata. I wished I could lie there for a month without thinking of anything. If only this place could transform into such a city without my noticing. As my illusion began to take shape, I painted over it with imagination, losing myself in the blur between reality and fantasy. <br><br><br>I enjoyed the feeling of becoming lost in this world I created.<br><br><br>
+      
+      Around that time, I also grew fond of fireworks. Not the fireworks themselves, but the cheap sets—bundles of red, purple, yellow, and blue-striped fireworks, the “Falling Star of Nakayama Temple,” “Firework Battles,” and “Withered Susuki Grass.” There were also fireworks called “mouse fireworks,” which were packed individually into a box, each shaped like a small ring. Something about these cheap, colorful things excited me. <br>
+      
+      I also became enamored with bidoro, the delicate glass marbles shaped like fish or flowers. I especially enjoyed tasting them. There was nothing quite like the faint, cool taste of glass. When I was a child, I would often put these marbles in my mouth, only to be scolded by my parents. Perhaps it was the sweet nostalgia of those childhood memories that drew me back to it. The taste was light and cool, carrying with it a delicate sense of poetic beauty. <br><br>
+      
+      As you might have guessed, I didn’t have any money. <br>Yet, to soothe the brief stirrings of my heart when I encountered such things, I needed a little indulgence. Just two or three sen’s worth<br>—something small and luxurious. <br>Something beautiful, though it appealed to my worn-out, listless self. <br>Those were the things that comforted me. <br><br><br>
+      
+      Before my life had been consumed by decay, I used to enjoy places like Maruzen—a store that sold red and yellow eau de cologne, finely crafted glassware, and elegant perfume bottles in amber and jade hues with intricate Rococo patterns. I’d also spend time looking at pipes, pocketknives, soaps, and tobacco. I could easily spend an hour in such a place, and in the end, I’d allow myself the luxury of buying just one fine pencil. <br>But by that time, even Maruzen felt oppressive to me. The books, the students, the cashier—all of it reminded me of debt collectors’ ghostly presences.<br>
+      
+      One morning, I found myself alone in an empty, airless room after my friend had left for school. At that time, I was drifting from one friend’s place to another, staying wherever I could. <br>Left alone, I was once again driven to wander the streets. <br>Something was always pushing me forward. <br>So I walked, passing through backstreets, pausing in front of a candy store, staring at dried shrimp and strips of cod in a dried goods shop, until I found myself heading toward Nijō, walking down Teramachi Street. <br>I came to a halt in front of a fruit shop.<br>
+      
+      I should take a moment to describe that fruit shop. It was my favorite shop among the ones I knew. Though it wasn’t a grand establishment, it had a raw, beautiful simplicity that appealed to me. The fruits were displayed on a steeply slanted black lacquered board, as if frozen in place by the gaze of Medusa. The greens were piled higher and higher toward the back—gorgeous carrots, beans soaking in water, or exquisite water chestnuts.
+      
+      At night, the shop looked even more beautiful. While Teramachi was usually lively and bustling, especially compared to streets in Tokyo or Osaka, the area around the fruit shop was strangely dark. Though its corner location at the intersection with Nijō Street might have accounted for some of the darkness, it was still unusual for a shop on a busy street. This only added to its allure. <br>The shop’s eaves were deep, almost like a hat pulled low over one’s eyes, casting everything in shadow.<br>
+      
+      It was on this day that I finally bought something from the shop. <br>To my surprise, they had lemons on display. Lemons weren’t particularly rare, but I hadn’t noticed them at this shop before. <br><br><br>I liked lemons—the simple lemon-yellow color, like paint squeezed from a tube, and the compact, spindle-like shape. <br><br><br>I decided to buy just one.<br><br><br>
+      
+      I wandered through the streets for quite a while after that, <br>clutching the lemon in my hand. <br><br><br>From the moment I held it, the ominous lump in my heart loosened its grip a little, and I felt truly happy. <br>It was strange how something so small and insignificant could ease the persistent gloom that had haunted me for so long. <br>The coldness of the lemon in my palm felt so good, especially since I had been running a fever from my lung condition. <br>In fact, I would sometimes grip my friends’ hands <br>just to show them how hot mine were. <br>The lemon's coldness seemed to seep into my body, <br>offering a strange, welcome comfort.<br><br><br>
+      
+      I kept bringing the lemon up to my nose, inhaling its scent deeply. Images of California, the place where the lemon was grown, floated in my mind. <br>I also remembered the phrase “to hit the nose” <br>from an old Chinese text I had studied. <br>Breathing in the fragrant air made me feel warm blood rising through my body, as if it were reawakening parts of me that had long been dormant.<br><br><br>
+      
+      I found it remarkable how such simple sensations of touch, smell, and sight could satisfy me so deeply. It was as though I had been searching for these feelings all along without realizing it.<br><br><br>
+      
+      My spirits lightened, I wandered with a sense of pride, imagining myself as a poet dressed in elegant attire, striding through the city streets. <br>I tested how the lemon’s color reflected off different surfaces, placing it on a dirty towel or against my coat. I even began to think, <br><br><br>“This weight—this is it.” <br><br><br>It felt as though this weight was the very thing I had been seeking all along, the measure of everything good and beautiful in life. <br><br><br>And I was happy.<br><br><br>
+      
+      Before I knew it, I had arrived in front of Maruzen. <br>Normally, I would have avoided the place, but on that day, <br>I felt like I could easily walk in.<br><br>
+      
+      “Why not? Let’s go in today” <br><br>I thought, and I strode into the store.<br><br>
+      
+      But something strange happened. <br><br>The happiness that had filled my heart began to fade away. <br><br>I no longer felt drawn to the perfume bottles or pipes. <br>A heavy sense of gloom began to settle over me again. <br>I thought perhaps it was the fatigue from walking. I wandered over to the art book section and started pulling out heavy books, but even the act of turning the pages felt more burdensome than usual. I pulled out one book after another, unable to stop myself, but I couldn’t concentrate. I piled the books up, flipped through them, but felt no desire to keep going. <br>Eventually, I even put back the heavy, orange-covered book by Ingres <br>that I used to love so much.<br>
+      
+      What a cursed feeling it was! My arms felt tired and weak. <br>I stared at the pile of books I had taken out.<br><br><br>
+      
+      Why didn’t these art books captivate me the way they used to? <br><br><br>I used to savor that strange feeling of disconnect, where after absorbing each page, I would look around at the ordinary surroundings and feel out of place.<br><br><br>
+      
+      At that moment, I remembered the lemon in my sleeve.<br><br><br>
+      
+      “That’s it!” I thought. <br><br><br>“I should try this out with the lemon.”<br><br><br>
+      
+      Excitement returned as I began piling up the books chaotically, building them up into a strange, fantastical tower. <br>I added some, took others away, and rebuilt it. <br>Every time I did, the tower turned red, blue, or some other color.<br><br><br>
+      
+      Finally, it was complete. <br><br><br>With a light, excited heart, I carefully placed the lemon at the top of the tower. <br><br><br><br><br><br>It was perfect.<br><br><br><br><br><br>
+      
+      Looking around, I noticed that the color of the lemon quietly absorbed the jarring hues of its surroundings into its spindle-shaped body, shining brightly. <br>I felt that the air inside the dusty Maruzen was strangely tense <br>only around that lemon. <br><br><br>I stared at it for a while.<br><br><br>
+      
+      Suddenly, a second idea struck me. <br><br><br>This peculiar plot startled me instead.<br><br><br><br><br><br>
+      
+      —What if I just left it as it was and went outside with a nonchalant expression?—<br><br><br><br><br><br>
+      
+      I felt that strange ticklish sensation again. <br><br><br><br><br><br>"Maybe I should leave. Yes, I'll leave." <br><br><br><br><br><br>And so, I quickly walked out.<br><br><br>
+      
+      That strange ticklish feeling made me smile as I walked down the street. <br><br><br>I imagined myself as a bizarre villain who had just planted a terrifying, golden bomb on the shelf of Maruzen. <br><br><br>How amusing would it be if, in just ten minutes, that entire store erupted in a massive explosion centered around the art section?<br><br><br>
+      
+      I eagerly pursued this thought. <br><br><br><br><br><br>"If that happened, even that suffocating Maruzen <br>would be blown to smithereens."<br><br><br><br><br><br>
+      
+      And so, I continued down the street, past Kyōgoku, where movie posters adorned the area with a peculiar charm.</h4>
+    <h6 id="description-ja" class="language hidden">
+      えたいの知れない不吉な塊が私の心を始終圧えつけていた。<br><br>焦躁と言おうか、嫌悪と言おうか――<br>酒を飲んだあとに宿酔があるように、酒を毎日飲んでいると宿酔に相当した時期がやって来る。<br><br><br>それが来たのだ。<br><br><br>これはちょっといけなかった。結果した肺尖カタルや神経衰弱がいけないのではない。<br>また背を焼くような借金などがいけないのではない。<br>いけないのはその不吉な塊だ。<br>以前私を喜ばせたどんな美しい音楽も、どんな美しい詩の一節も辛抱がならなくなった。<br>蓄音器を聴かせてもらいにわざわざ出かけて行っても、最初の二三小節で不意に立ち上がってしまいたくなる。何かが私を居堪らずさせるのだ。それで始終私は街から街を浮浪し続けていた。<br><br><br>
+    　何故だかその頃私は見すぼらしくて美しいものに強くひきつけられたのを覚えている。<br>風景にしても壊れかかった街だとか、その街にしてもよそよそしい表通りよりもどこか親しみのある、汚い洗濯物が干してあったりがらくたが転がしてあったりむさくるしい部屋が覗いていたりする裏通りが好きであった。雨や風が蝕んでやがて土に帰ってしまう、と言ったような趣きのある街で、土塀が崩れていたり家並が傾きかかっていたり――勢いのいいのは植物だけで、時とするとびっくりさせるような向日葵があったりカンナが咲いていたりする。
+    　時どき私はそんな路を歩きながら、ふと、そこが京都ではなくて京都から何百里も離れた仙台とか長崎とか――そのような市へ今自分が来ているのだ――という錯覚を起こそうと努める。私は、できることなら京都から逃げ出して誰一人知らないような市へ行ってしまいたかった。<br><br><br>第一に安静。<br><br><br>がらんとした旅館の一室。清浄な蒲団。匂においのいい蚊帳と糊のよくきいた浴衣。そこで一月ほど何も思わず横になりたい。希わくはここがいつの間にかその市になっているのだったら。――錯覚がようやく成功しはじめると私はそれからそれへ想像の絵具を塗りつけてゆく。なんのことはない、私の錯覚と壊れかかった街との二重写しである。<br><br><br>そして私はその中に現実の私自身を見失うのを楽しんだ。<br><br><br>
+    　私はまたあの花火というやつが好きになった。花火そのものは第二段として、あの安っぽい絵具で赤や紫や黄や青や、さまざまの縞模様を持った花火の束、中山寺の星下り、花合戦、枯れすすき。それから鼠花火というのは一つずつ輪になっていて箱に詰めてある。そんなものが変に私の心を唆そそった。<br>
+    　それからまた、びいどろという色硝子ガラスで鯛や花を打ち出してあるおはじきが好きになったし、南京玉が好きになった。またそれを嘗めてみるのが私にとってなんともいえない享楽だったのだ。あのびいどろの味ほど幽かな涼しい味があるものか。私は幼い時よくそれを口に入れては父母に叱られたものだが、その幼時のあまい記憶が大きくなって落ち魄れた私に蘇えってくる故だろうか、まったくあの味には幽かな爽やかななんとなく詩美と言ったような味覚が漂って来る。<br><br>
+    　察しはつくだろうが私にはまるで金がなかった。<br>とは言えそんなものを見て少しでも心の動きかけた時の私自身を慰めるためには贅沢ということが必要であった。二銭や三銭のもの――と言って贅沢なもの。<br>美しいもの――と言って無気力な私の触角にむしろ媚びて来るもの。<br>――そう言ったものが自然私を慰めるのだ。<br><br><br>
+    　生活がまだ蝕しばまれていなかった以前私の好きであった所は、たとえば丸善であった。赤や黄のオードコロンやオードキニン。洒落た切子細工や典雅なロココ趣味の浮模様を持った琥珀色や翡翠色の香水壜。煙管、小刀、石鹸、煙草。私はそんなものを見るのに小一時間も費すことがあった。そして結局一等いい鉛筆を一本買うくらいの贅沢をするのだった。<br>しかしここももうその頃の私にとっては重くるしい場所に過ぎなかった。書籍、学生、勘定台、これらはみな借金取りの亡霊のように私には見えるのだった。<br>
+    　ある朝――その頃私は甲の友達から乙の友達へというふうに友達の下宿を転々として暮らしていたのだが――友達が学校へ出てしまったあとの空虚な空気のなかにぽつねんと一人取り残された。<br>私はまたそこから彷徨い出なければならなかった。<br>何かが私を追いたてる。<br>そして街から街へ、先に言ったような裏通りを歩いたり、駄菓子屋の前で立ち留どまったり、<br>乾物屋の乾蝦や棒鱈や湯葉を眺めたり、とうとう私は二条の方へ寺町を下さがり、<br>そこの果物屋で足を留とめた。<br><br>
+    ここでちょっとその果物屋を紹介したいのだが、その果物屋は私の知っていた範囲で最も好きな店であった。そこは決して立派な店ではなかったのだが、果物屋固有の美しさが最も露骨に感ぜられた。果物はかなり勾配の急な台の上に並べてあって、その台というのも古びた黒い漆塗りの板だったように思える。何か華やかな美しい音楽の快速調の流れが、見る人を石に化したというゴルゴンの鬼面――的なものを差しつけられて、あんな色彩やあんなヴォリウムに凝り固まったというふうに果物は並んでいる。青物もやはり奥へゆけばゆくほど堆うず高く積まれている。――実際あそこの人参葉の美しさなどは素晴しかった。それから水に漬つけてある豆だとか慈姑だとか。
+    　またそこの家の美しいのは夜だった。寺町通はいったいに賑かな通りで――と言って感じは東京や大阪よりはずっと澄んでいるが――飾窓の光がおびただしく街路へ流れ出ている。それがどうしたわけかその店頭の周囲だけが妙に暗いのだ。もともと片方は暗い二条通に接している街角になっているので、暗いのは当然であったが、その隣家が寺町通にある家にもかかわらず暗かったのが瞭然はっきりしない。<br>しかしその家が暗くなかったら、あんなにも私を誘惑するには至らなかったと思う。<br>もう一つはその家の打ち出した廂なのだが、その廂が眼深に冠った帽子の廂のように――これは形容というよりも、「おや、あそこの店は帽子の廂をやけに下げているぞ」と思わせるほどなので、廂の上はこれも真暗なのだ。そう周囲が真暗なため、店頭に点つけられた幾つもの電燈が驟雨のように浴びせかける絢爛は、周囲の何者にも奪われることなく、ほしいままにも美しい眺めが照らし出されているのだ。裸の電燈が細長い螺旋棒をきりきり眼の中へ刺し込んでくる往来に立って、また近所にある鎰屋の二階の硝子窓をすかして眺めたこの果物店の眺めほど、その時どきの私を興がらせたものは寺町の中でも稀だった。<br>
+    　その日私はいつになくその店で買物をした。<br>というのはその店には珍しい檸檬が出ていたのだ。檸檬などごくありふれている。がその店というのも見すぼらしくはないまでもただあたりまえの八百屋に過ぎなかったので、<br>それまであまり見かけたことはなかった。<br>いったい私はあの檸檬が好きだ。レモンエロウの絵具をチューブから搾り出して固めたようなあの単純な色も、それからあの丈の詰まった紡錘形の恰好も。<br><br><br>――結局私はそれを一つだけ買うことにした。<br><br><br>
+    それからの私はどこへどう歩いたのだろう。私は長い間街を歩いていた。<br><br><br>始終私の心を圧えつけていた不吉な塊がそれを握った瞬間からいくらか弛んで来たとみえて、<br>私は街の上で非常に幸福であった。<br>あんなに執拗かった憂鬱が、そんなものの一顆で紛らされる<br>――あるいは不審なことが、逆説的なほんとうであった。<br><br><br>それにしても心というやつはなんという不可思議なやつだろう。<br><br><br>
+    　その檸檬の冷たさはたとえようもなくよかった。<br>その頃私は肺尖を悪くしていていつも身体に熱が出た。事実友達の誰彼だれかれに私の熱を見せびらかすために手の握り合いなどをしてみるのだが、私の掌が誰のよりも熱かった。その熱い故だったのだろう、握っている掌から身内に浸み透ってゆくようなその冷たさは快いものだった。
+    　私は何度も何度もその果実を鼻に持っていっては嗅かいでみた。それの産地だというカリフォルニヤが想像に上って来る。漢文で習った「売柑者之言」の中に書いてあった「鼻を撲つ」という言葉が断れぎれに浮かんで来る。<br>そしてふかぶかと胸一杯に匂やかな空気を吸い込めば、ついぞ胸一杯に呼吸したことのなかった私の身体や顔には温い血のほとぼりが昇って来てなんだか身内に元気が目覚めて来たのだった。……
+    　実際あんな単純な冷覚や触覚や嗅覚や視覚が、ずっと昔からこればかり探していたのだと言いたくなったほど私にしっくりしたなんて私は不思議に思える――それがあの頃のことなんだから。
+    　私はもう往来を軽やかな昂奮に弾んで、一種誇りかな気持さえ感じながら、美的装束をして街をかっ歩した詩人のことなど思い浮かべては歩いていた。汚れた手拭の上へ載せてみたりマントの上へあてがってみたりして色の反映を量はかったり、またこんなことを思ったり、
+    　<br><br><br>――つまりはこの重さなんだな。――<br><br><br>
+    　その重さこそ常づね尋ねあぐんでいたもので、疑いもなくこの重さはすべての善いものすべての美しいものを重量に換算して来た重さであるとか、思いあがった諧謔心から<br>そんな馬鹿げたことを考えてみたり<br><br><br>――なにがさて私は幸福だったのだ。<br><br><br>
+    　どこをどう歩いたのだろう、私が最後に立ったのは丸善の前だった。<br>平常あんなに避けていた丸善がその時の私にはやすやすと入れるように思えた。<br>
+    「今日は一つ入ってみてやろう」そして私はずかずか入って行った。<br>
+    　しかしどうしたことだろう、私の心を充たしていた幸福な感情はだんだん逃げていった。<br>香水の壜にも煙管にも私の心はのしかかってはゆかなかった。<br>憂鬱が立て罩めて来る、私は歩き廻った疲労が出て来たのだと思った。私は画本の棚の前へ行ってみた。画集の重たいのを取り出すのさえ常に増して力が要るな！
+    　と思った。しかし私は一冊ずつ抜き出してはみる、そして開けてはみるのだが、克明にはぐってゆく気持はさらに湧いて来ない。しかも呪われたことにはまた次の一冊を引き出して来る。それも同じことだ。それでいて一度バラバラとやってみなくては気が済まないのだ。<br>それ以上は堪らなくなってそこへ置いてしまう。以前の位置へ戻すことさえできない。<br>私は幾度もそれを繰り返した。<br>とうとうおしまいには日頃から大好きだったアングルの橙色の重い本まで<br>なおいっそうの堪えがたさのために置いてしまった。<br>――なんという呪われたことだ。手の筋肉に疲労が残っている。私は憂鬱になってしまって、自分が抜いたまま積み重ねた本の群を眺めていた。<br><br><br>
+    　以前にはあんなに私をひきつけた画本がどうしたことだろう。<br><br><br>一枚一枚に眼を晒し終わって後、さてあまりに尋常な周囲を見廻すときのあの変にそぐわない気持を、私は以前には好んで味わっていたものであった。……<br><br><br>
+    「あ、そうだそうだ」その時私は袂の中の檸檬を憶い出した。<br><br><br>本の色彩をゴチャゴチャに積みあげて、一度この檸檬で試してみたら。<br><br><br>「そうだ」<br><br><br>
+    　私にまた先ほどの軽やかな昂奮が帰って来た。<br>私は手当たり次第に積みあげ、また慌あわただしく潰し、また慌しく築きあげた。<br>新しく引き抜いてつけ加えたり、取り去ったりした。<br>奇怪な幻想的な城が、そのたびに赤くなったり青くなったりした。<br><br><br>
+    　やっとそれはでき上がった。<br><br><br>そして軽く跳りあがる心を制しながら、その城壁の頂きに恐る恐る檸檬を据えつけた。<br><br><br><br><br><br>そしてそれは上出来だった。<br><br><br><br><br><br>
+    　見わたすと、その檸檬の色彩はガチャガチャした色の階調をひっそりと<br>紡錘形の身体の中へ吸収してしまって、カーンと冴えかえっていた。<br>私は埃っぽい丸善の中の空気が、その檸檬の周囲だけ変に緊張しているような気がした。<br><br><br>私はしばらくそれを眺めていた。<br><br><br>
+    　不意に第二のアイディアが起こった。<br><br><br>その奇妙なたくらみはむしろ私をぎょっとさせた。<br><br><br><br><br><br>
+    　――それをそのままにしておいて私は、なに喰わぬ顔をして外へ出る。――<br><br><br><br><br><br>
+    　私は変にくすぐったい気持がした。<br><br><br><br><br><br>「出て行こうかなあ。そうだ出て行こう」<br><br><br><br><br><br>そして私はすたすた出て行った。<br><br><br>
+    　変にくすぐったい気持が街の上の私を微笑ませた。<br><br><br>丸善の棚へ黄金色に輝く恐ろしい爆弾を仕掛けて来た奇怪な悪漢が私で、もう十分後にはあの丸善が美術の棚を中心として大爆発をするのだったらどんなにおもしろいだろう。<br><br><br>
+    　私はこの想像を熱心に追求した。<br><br><br><br><br><br>「そうしたらあの気詰まりな丸善も粉葉みじんだろう」<br><br><br><br><br><br>
+    　そして私は活動写真の看板画が奇体な趣きで街を彩っている京極を下って行った。
+    </h6>
+    
+    <div class="langchange">
+    <button onclick="switchToEnglish()" class="languagebutton"><h4>EN  </h4></button>
+    <button onclick="switchToJapanese()" class="languagebutton"><h4>  JP</h4></button>
+    </div>
+
+    <script>
+        function switchToEnglish() {
+            // Show English elements and hide Japanese elements
+            document.getElementById('description-en').classList.remove('hidden');
+            document.getElementById('description-ja').classList.add('hidden');
+        }
+
+        function switchToJapanese() {
+            // Show Japanese elements and hide English elements
+            document.getElementById('description-ja').classList.remove('hidden');
+            document.getElementById('description-en').classList.add('hidden');
+        }
+    </script>
+
+
+</div>
+
+<div id="Video" class="tabcontent">
+  <iframe class=lemonanimation width="1008" height="567" src="https://www.youtube.com/embed/9NKtqAMI6vA?si=E2_JPXfjf0WMYD6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div id="Game" class="tabcontent">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.29/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/ykaqmPSqPYxaSRO5/scene.splinecode"></spline-viewer>
+</div>
+
+</div>
+    
+</body>
+</html>
