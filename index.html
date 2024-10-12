@@ -59,7 +59,7 @@
         // Check if we've reached the last image
         if (currentImageIndex >= images.length) {
             // Redirect to another website
-            window.location.href = "https://newart.city/show/lemon"; // Replace with your target URL
+            window.location.href = "https://newart.city/show/lemon"; '_blank'// Replace with your target URL
         } else {
             // Change the background image
             document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
@@ -69,6 +69,19 @@
     // Set the initial background image when the page loads
     window.onload = function() {
         document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    };
+
+    window.onload = function() {
+        // Check if the user has already clicked the last image
+        if (localStorage.getItem('lastImageClicked')) {
+            // Reset and redirect to home page when clicking the last image again
+            document.body.addEventListener('click', () => {
+                window.location.href = 'index.html'; // Replace with your homepage URL
+            });
+        } else {
+            // Show the first image if it's the first visit
+            document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        }
     };
 
     const tabButtons = document.querySelectorAll('.tablink');
