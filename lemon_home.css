@@ -87,6 +87,15 @@ h8{
     line-height: 34px;
 }
 
+h9{
+    list-style: none;
+    font-family: "brevier", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+	color: #B3B3B3;
+}
+
 
 
 header {
@@ -178,6 +187,24 @@ li:hover {
 	appearance: none;
 	color: #B3B3B3;
 	cursor:se-resize;
+}
+
+#Home h9{
+    position: fixed;
+    right: 120px;
+    bottom: 100px;
+}
+
+.click-lemon {
+    position: fixed;
+    right: 120px;
+    bottom: 100px; 
+}
+
+#homeClickLemonSign {
+    position: fixed;
+    right: 120px;
+    bottom: 100px; 
 }
 
 #Story{
