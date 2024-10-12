@@ -45,20 +45,26 @@
   <script>
     const images = ['src/lemon_background_1.jpg', 'src/lemon_background_2.jpg', 'src/lemon_background_3.jpg', 'src/lemon_background_4.jpg', 'src/lemon_background_5.jpg', 'src/lemon_background_6.jpg', 'src/lemon_background_7.jpg'];
     let currentImageIndex = 0;
-  
-    function changeBackground() {
-      // Increment the image index
-      currentImageIndex++;
 
-      // Check if we've reached the last image
-      if (currentImageIndex >= images.length) {
-        // Redirect to another website
-        window.location.href = "https://newart.city/show/lemon"; // Replace with your target URL
-      } else {
-        // Change the background image
-        document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
-      }
+    // Function to change the background image
+    function changeBackground() {
+        // Increment the image index
+        currentImageIndex++;
+
+        // Check if we've reached the last image
+        if (currentImageIndex >= images.length) {
+            // Redirect to another website
+            window.location.href = "https://newart.city/show/lemon"; // Replace with your target URL
+        } else {
+            // Change the background image
+            document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        }
     }
+
+    // Set the initial background image when the page loads
+    window.onload = function() {
+        document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    };
   </script>
 </div>
 
