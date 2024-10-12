@@ -11,8 +11,8 @@
     <link href="lemon_home.css" rel="stylesheet" type="text/css">
     <link rel="preload" href="https://use.typekit.net/fonts/font-name.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <!-- load -->
     
+  
     <!-- font -->
     <script>
       (function(d) {
@@ -48,24 +48,8 @@
 <div id="Home" class="tabcontent">
   <h9 id="homeClickLemonSign">Click Lemon!</h9>
   <script>
-
-    const images = [
-        'src/lemon_background_1.jpg',
-        'src/lemon_background_2.jpg',
-        'src/lemon_background_3.jpg',
-        'src/lemon_background_4.jpg',
-        'src/lemon_background_5.jpg',
-        'src/lemon_background_6.jpg',
-        'src/lemon_background_7.jpg'
-    ];
+    const images = ['src/lemon_background_1.jpg', 'src/lemon_background_2.jpg', 'src/lemon_background_3.jpg', 'src/lemon_background_4.jpg', 'src/lemon_background_5.jpg', 'src/lemon_background_6.jpg', 'src/lemon_background_7.jpg'];
     let currentImageIndex = 0;
-
-    // Check if user has visited before
-    if (!sessionStorage.getItem('visited')) {
-        sessionStorage.setItem('visited', 'true');
-        // Redirect to the first page (Home tab)
-        window.location.href = "#Home"; // Ensure this points to your first page
-    }
 
     // Function to change the background image
     function changeBackground() {
@@ -75,17 +59,11 @@
         // Check if we've reached the last image
         if (currentImageIndex >= images.length) {
             // Redirect to another website
-            window.location.href = "https://newart.city/show/lemon"; // Replace with your target URL
+            window.location.href = "https://newart.city/show/lemon"; '_blank'// Replace with your target URL
         } else {
             // Change the background image
             document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
         }
-    }
-
-    // Function to reset the background image when returning to the Home page
-    function resetBackground() {
-        currentImageIndex = 0; // Reset to the first image
-        document.body.style.backgroundImage = `url(${images[currentImageIndex]})`; // Set background to first image
     }
 
     // Set the initial background image when the page loads
@@ -93,18 +71,28 @@
         document.body.style.backgroundImage = `url(${images[currentImageIndex]})`;
     };
 
-    // Add event listener for the Home tab link
-    document.getElementById('homeTabLink').addEventListener('click', resetBackground);
+    // Function to reset the background image to the first one
+function resetBackground() {
+    currentImageIndex = 0; // Reset to the first image
+    document.body.style.backgroundImage = `url(${images[currentImageIndex]})`; // Set background to the first image
+}
+
+// Add event listener for the Home button
+document.querySelector('.tablink[onclick*="Home"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    resetBackground(); // Reset the background image
+});
+
+    
 
     const tabButtons = document.querySelectorAll('.tablink');
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            document.getElementById('clickLemonSign').style.display = 'none';
-        });
-    });
+                    tabButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            document.getElementById('clickLemonSign').style.display = 'none';
+                        });
+                    });
 
-</script>
-
+  </script>
 </div>
 
 <div id="About" class="tabcontent">
